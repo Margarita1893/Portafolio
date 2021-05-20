@@ -1,0 +1,383 @@
+body {
+    background-image: url(img/paper-flower-background-4794429_1920.jpg);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100vw;
+}
+
+.profile-content {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+}
+
+.profile {
+    text-align: center;
+    background-image: url(./img/foto.jpeg);
+    background-size: cover;
+    background-position: center center;
+    width: 360px;
+    height: 360px;
+    max-width: 360px;
+    max-height: 360px;
+    border-radius: 50%;
+}
+
+
+/* .photo {
+    border-radius: 100%;
+    width: 330px;
+    height: 360px;
+    border: solid 4px rgb(2, 37, 61);
+} */
+
+
+/* img {
+   
+} */
+
+.content {
+    text-align: center;
+    /* margin-top: 100px; */
+    font-size: xx-large;
+}
+
+#modes_menu ul {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    list-style: none;
+    font-size: 25px;
+}
+
+#modes_menu ul li {
+    padding-bottom: 5px;
+    font-size: 20px;
+    margin: 10px;
+}
+
+
+/* Clases nuevas */
+
+.modes_menu {
+    position: absolute;
+    margin-top: -10px;
+    margin-left: 80%;
+    color: white;
+    /* background: rgb(240, 122, 68); */
+    background: rgb(136, 128, 128);
+    overflow: hidden;
+    box-shadow: 2px 2px 10px rgba(215, 217, 224, 0.8);
+    border-radius: 5px;
+    /* Transformaciones */
+    transform-origin: left top;
+}
+
+.modes_menu--ocultar {
+    display: none;
+}
+
+.icon {
+    color: darkkhaki;
+}
+
+#modes-btn {
+    margin-left: 90%;
+    margin-top: 50px;
+    font-size: 60px;
+    border-radius: 15px;
+    /* color: rgb(240, 122, 68); */
+    color: #ffa600;
+}
+
+button {
+    border-style: none;
+    background: none;
+}
+
+.text {
+    color: #ffa600;
+    font-size: 55px;
+}
+
+.titulo p {
+    font-size: 80px;
+    margin-top: 0;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+
+/* Carousel */
+
+.gallery {
+    background: #EEE;
+    width: 100vh;
+}
+
+.gallery-cell {
+    width: 86%;
+    height: 200px;
+    margin-right: 10px;
+    background: #8C8;
+    counter-increment: gallery-cell;
+}
+
+
+/* cell number */
+
+.gallery-cell:before {
+    display: block;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    content: counter(gallery-cell);
+    line-height: 200px;
+    font-size: 80px;
+    color: white;
+}
+
+
+/*FORM*/
+
+form {
+    position: relative;
+    width: 540px;
+    height: 380px;
+    margin: 0 auto;
+    background: #FFF url(img/white-painted-concrete-wall-888895_1920.jpg);
+    border-radius: 20px;
+    box-shadow: solid 10px black;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border: solid 2px rgb(240, 237, 240);
+}
+
+h2 {
+    text-align: center;
+    padding-top: 10px;
+    font-size: 40px;
+}
+
+input,
+label,
+textarea {
+    display: block;
+    position: relative;
+    left: 30%;
+    top: -15px;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+textarea {
+    border: solid 2px black;
+}
+
+.btn {
+    display: block;
+    position: absolute;
+    left: 40%;
+    border-radius: 8px;
+    padding: 10px;
+    background: #ffa600;
+    font: bold;
+    border: solid 2px cornsilk;
+}
+
+
+/* SKILLS */
+
+#icon {
+    width: 200px;
+    height: 100px;
+    margin-left: 25%
+}
+
+#icon2 {
+    border-radius: 20px;
+}
+
+.skill {
+    width: 100px;
+    height: 100px;
+    margin: 30px;
+    margin-top: 10%;
+}
+
+.skills {
+    display: block;
+}
+
+.skill1 {
+    width: 150px;
+    height: 120px;
+    margin: 25px;
+    margin-top: 10%;
+}
+
+.skill2 {
+    width: 150px;
+    height: 100px;
+    margin: 25px;
+    margin-top: 10%;
+}
+
+
+/* Carousel */
+
+.port {
+    text-align: center;
+    margin-top: 20%;
+    font-size: 40px;
+    text-shadow: 2px 1px #eff3f3;
+}
+
+.main-gallery {
+    background-color: rgba(24, 23, 23, 0.383);
+    margin-top: -8%;
+    width: 100vw;
+    height: 46vw;
+}
+
+[type=radio] {
+    display: none;
+}
+
+#slider {
+    height: 35vw;
+    position: relative;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+}
+
+#slider label {
+    margin: auto;
+    width: 60%;
+    height: 100%;
+    border-radius: 4px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    cursor: pointer;
+    transition: transform 0.4s ease;
+}
+
+[type=radio] {
+    display: none;
+}
+
+#slider {
+    height: 35vw;
+    position: relative;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+}
+
+#slider label {
+    margin: auto;
+    width: 60%;
+    height: 100%;
+    border-radius: 4px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    cursor: pointer;
+    transition: transform 0.4s ease;
+}
+
+#s1:checked~#slide4,
+#s2:checked~#slide5,
+#s3:checked~#slide1,
+#s4:checked~#slide2,
+#s5:checked~#slide3 {
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .37);
+    transform: translate3d(-30%, 0, -200px);
+}
+
+#s1:checked~#slide5,
+#s2:checked~#slide1,
+#s3:checked~#slide2,
+#s4:checked~#slide3,
+#s5:checked~#slide4 {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, .3), 0 2px 2px 0 rgba(0, 0, 0, .2);
+    transform: translate3d(-15%, 0, -100px);
+}
+
+#s1:checked~#slide1,
+#s2:checked~#slide2,
+#s3:checked~#slide3,
+#s4:checked~#slide4,
+#s5:checked~#slide5 {
+    box-shadow: 0 13px 25px 0 rgba(0, 0, 0, .3), 0 11px 7px 0 rgba(0, 0, 0, .19);
+    transform: translate3d(0, 0, 0);
+}
+
+#s1:checked~#slide2,
+#s2:checked~#slide3,
+#s3:checked~#slide4,
+#s4:checked~#slide5,
+#s5:checked~#slide1 {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, .3), 0 2px 2px 0 rgba(0, 0, 0, .2);
+    transform: translate3d(15%, 0, -100px);
+}
+
+#s1:checked~#slide3,
+#s2:checked~#slide4,
+#s3:checked~#slide5,
+#s4:checked~#slide1,
+#s5:checked~#slide2 {
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .37);
+    transform: translate3d(30%, 0, -200px);
+}
+
+
+/* Footer*/
+
+footer {
+    background-color: rgb(85, 83, 83);
+    padding: 20px;
+    border-radius: 2px;
+    width: 100vw;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+}
+
+ul li {
+    margin: 15px;
+    list-style: none;
+}
+
+.copy {
+    text-align: center;
+    font-size: 20px;
+    color: azure;
+}
+
+
+/* btn*/
+
+.boton {
+    color: #FFF;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+    border-radius: 40px;
+    background: linear-gradient(90deg, #646564, #6C6D6A);
+    margin-left: 70%;
+    margin-top: -80%;
+    border: solid 1px oldlace;
+}
+
+.boton {
+    margin-top: -80px;
+    margin-bottom: 50%;
+}
