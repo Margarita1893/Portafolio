@@ -1,151 +1,176 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="/path/to/flickity.css" media="screen">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-    <title>Mara Portafolio</title>
-</head>
+<html>
+<title>Margarita Rodríguez</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    body {
+        background-image: url("img/paper-flower-background-4794429_1920.jpg");
+    }
+    
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Montserrat", sans-serif
+    }
+    
+    .w3-row-padding img {
+        margin-bottom: 12px
+    }
+    
+    .bgimg {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url('img/mara1.png');
+        min-height: 100%;
+    }
+</style>
 
 <body>
-    <!-- <div class="container">
 
-        <button id="modes-btn" class="icon"><i class="fas fa-bars"></i></button>
-        <nav id="modes_menu" class="modes_menu modes_menu--ocultar">
-            <ul> -->
-    <!-- <label for="modes"></label><br>
+    <!-- Sidebar with image -->
+    <nav class="w3-sidebar w3-hide-medium w3-hide-small" style="width:40%">
+        <div class="bgimg"></div>
+    </nav>
 
-                <li> Inicio </li>
-                <li> Portafolio</li>
-                <li> Contacto</li>
-            </ul>
-        </nav>
-    </div> -->
-    <main>
-        <div class="content">
-
-            <h2 class="titulo">
-                <p>Margarita Rodríguez </p>
-                <span class="typed"></span>
-            </h2>
-
-            <div class="titulo" id="cadenas-texto">
-
-                <!-- <p>Desarrolladora <br> <i class="text">FullStack Junior</i></p>
-                <p>Tecnologa<br> <i class="text">Analisis & Desarrollo</i></p> -->
-                <p><i class="text">Desarrolladora</i></p>
-                <p><i class="text">FullStack</i></p>
-
-            </div>
-
+    <!-- Hidden Sidebar (reveals when clicked on menu icon)-->
+    <nav class="w3-sidebar w3-black w3-animate-right w3-xxlarge" style="display:none;padding-top:150px;right:0;z-index:2" id="mySidebar">
+        <a href="javascript:void(0)" onclick="closeNav()" class="w3-button w3-black w3-xxxlarge w3-display-topright" style="padding:0 12px;">
+            <i class="fa fa-remove"></i>
+        </a>
+        <div class="w3-bar-block w3-center">
+            <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Inicio</a>
+            <a href="#portfolio" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Portafolio</a>
+            <a href="#about" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Sobre mi</a>
+            <a href="#contact" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Contacto</a>
         </div>
-    </main>
-    <div class="profile-content">
-        <div class="profile">
-            <div class="card1" style="width: 18rem;">
-                <div class="card-body">
-                    <h5 class="card-title">Perfil</h5>
+    </nav>
 
-                    <p class="card-text">Hago desarrollo Fullstack utilizando tecnologías como PHP , HTML5, CSS3, JavaScript, React y aplicación en bases de datos MySQL y cuento con conocimientos de Scrum para trabajo en equipo. Me gusta trabajar con creatividad, me entusiasma
-                        aprender nuevas tecnologías, puedo adaptarme con rapidez a los cambios, Actualmente co-lidero una familia de cuatro personas lo cual me ha brindado capacidades de resolución de problema y toma de decisiones .
+    <!-- Page Content -->
+    <div class="w3-main w3-padding-large" style="margin-left:40%">
 
+        <!-- Menu icon to open sidebar -->
+        <span class="w3-button w3-top w3-white w3-xxlarge w3-text-grey w3-hover-text-black" style="width:auto;right:0;" onclick="openNav()"><i class="fa fa-bars"></i></span>
 
-                    </p>
+        <!-- Header -->
+        <header class="w3-container w3-center" style="padding:128px 16px" id="home">
+            <h1 class="w3-jumbo"><b>Margarita Rodríguez</b></h1>
+
+            <p>Desarrolladora FullStack.</p>
+
+            <div><img src="img/mara1.jpeg" class="w3-image w3-hide-large w3-round " style="border-radius: 50%;" width="50%" height="auto"></div>
+            <button class="w3-button w3-light-grey w3-padding-large w3-margin-top">
+                <i class="fa fa-download"></i> <a
+                    href="https://drive.google.com/file/d/1ojLOp6z-bLeY_8g_T_yLLZ3vkXthW9py/view?usp=sharing">Descargar
+                    CV</a>
+            </button>
+        </header>
+
+        <!-- Portfolio Section -->
+        <div class="w3-padding-32 w3-content" id="portfolio">
+            <h2 class="w3-text-grey">Mi Portafolio</h2>
+            <hr class="w3-opacity">
+
+            <!-- Grid for photos -->
+            <div class="w3-row-padding" style="margin:0 -16px">
+                <div class="w3-half">
+                    <a href="https://margarita1893.github.io/retosjs/" target="_blank"> <img src="img/project1.png" style="width:100%"></a>
+                    <a href="https://modest-payne-6b229e.netlify.app/" target="_blank"><img src="img/project3.png" style="width:100%"></a>
 
                 </div>
+                <div class="w3-half">
+                    <a href="https://margarita1893.github.io/cronoReact/" target="_blank"><img src="img/project2.png" style="width:100%"></a>
+                    <a href="https://joyeria.woobit.co/" target="_blank"><img src="img/wordpress.png" style="width:100%"></a>
+
+                </div>
+                <!-- End photo grid -->
             </div>
-
-
+            <!-- End Portfolio Section -->
         </div>
 
-
-        <!-- <img class="photo" src="" alt="logo"> -->
-    </div>
-
-    <div class="project">
-        <h2>Proyectos</h2>
-
-        <ul class="list-group">
-
-            <li class="list-group-item"><a href="https://margarita1893.github.io/retosjs/" target="_blank"> Proyecto
-                    Retos en JavaScript & Html, CSS3</a> </li>
-
-            <li class="list-group-item list-group-item-primary">
-                <a href="https://modest-payne-6b229e.netlify.app/" target="_blank">Menú Digital React.js</a>
-            </li>
-            <li class="list-group-item list-group-item-secondary">
-                <a href="https://margarita1893.github.io/cronoReact/" target="_blank">Cronometro React.js</a>
-            </li>
-            <li class="list-group-item list-group-item-success">
-                <a href="https://joyeria.woobit.co/" target="_blank">Tienda En Línea Wordpress </a>
-            </li>
-
-
-
-        </ul>
-
-    </div>
-
-
-
-
-
-
-    <div>
-        <form name="contact" method="POST" data-netlify="true">
-            <h2>Contacto:</h2>
-
-            <div id="from">
-                <label for="name">Nombre:</label>
-                <input type="text" id="name" name="name">
+        <!-- About Section -->
+        <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="about">
+            <h2>Sobre mi </h2>
+            <hr class="w3-opacity">
+            <p>Soy desarrolladora Fullstack web utilizo tecnologías como PHP , HTML5, CSS3, JavaScript, React y aplicación en bases de datos MySQL y cuento con conocimientos de Scrum para trabajo en equipo. Me gusta trabajar con creatividad, me entusiasma
+                aprender nuevas tecnologías, puedo adaptarme con rapidez a los cambios, Actualmente co-lidero una familia de cuatro personas lo cual me ha brindado capacidades de resolución de problema y toma de decisiones .
+            </p>
+            <h3 class="w3-padding-16">Skills</h3>
+            <p class="w3-wide">HTML</p>
+            <div class="w3-light-grey">
+                <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:95%">95%</div>
+            </div>
+            <p class="w3-wide">CSS</p>
+            <div class="w3-light-grey">
+                <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:85%">85%</div>
+            </div>
+            <p class="w3-wide">JavaScript</p>
+            <div class="w3-light-grey">
+                <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:80%">80%</div>
             </div>
 
-            <div id="reply">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email">
+            <p class="w3-wide">PHP</p>
+            <div class="w3-light-grey">
+                <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:80%">80%</div>
             </div>
 
-            <div id="mensaje">
-                <label for="mensaje">Mensaje:</label>
-                <textarea id="mensaje" name="mensaje"></textarea>
+            <p class="w3-wide">Laravel</p>
+            <div class="w3-light-grey">
+                <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:80%">80%</div>
             </div>
 
-            <div class="btn">
-                <button type="submit" value="Enviar" id="btnSend">Enviar</button>
+            <p class="w3-wide">Java</p>
+            <div class="w3-light-grey">
+                <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:80%">80%</div>
+            </div><br>
+
+
+
+
+            <!-- Contact Section -->
+            <div class="w3-padding-32 w3-content w3-text-grey" id="contact" style="margin-bottom:64px">
+                <h2>Contáctame</h2>
+                <hr class="w3-opacity">
+
+                <div class="w3-section">
+                    <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Bogotá - Colombia</p>
+                    <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Celular: +57 3017663383</p>
+                    <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: margareth1893@gmail.com
+                    </p>
+                </div>
+
+
+
+                <!-- Footer -->
+                <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin:-24px">
+                    <i class="fa fa-github w3-hover-opacity"></i>
+                    <i class="fa fa-linkedin w3-hover-opacity"></i>
+                    <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">Margarita</a></p>
+                    <!-- End footer -->
+                </footer>
+
+                <!-- END PAGE CONTENT -->
             </div>
-        </form>
-    </div>
-    <footer>
 
-        <ul>
-            <li>
-                <a href="https://github.com/Margarita1893" target="_blank"><img src="img/github.png" width="50" height="50" /></a>
-            </li>
-            <li>
-                <a href="https://www.linkedin.com/in/margarita-rodriguez-alt/" target="_blank"><img src="img/linkedin.png" width="50" height="50" /></a>
-            </li>
-            <li>
-                <a href="https://drive.google.com/file/d/1ojLOp6z-bLeY_8g_T_yLLZ3vkXthW9py/view?usp=sharing"><img src="img/cv.png" width="50" height="50" /></a>
-            </li>
-            <li>
-                <a href="https://wa.me/573017663383" target="_blank"><img src="img/wapp.png" width="50" height="50" /></a>
-            </li>
-        </ul>
+            <script>
+                // Open and close sidebar
+                function openNav() {
+                    document.getElementById("mySidebar").style.width = "60%";
+                    document.getElementById("mySidebar").style.display = "block";
+                }
 
-        <p class="copy">Copyrigth 2021</p>
+                function closeNav() {
+                    document.getElementById("mySidebar").style.display = "none";
+                }
+            </script>
 
-    </footer>
-    <script src="/path/to/flickity.pkgd.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
-    <!-- <script src="js/typed.js"></script> -->
-    <script src="js/script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 </body>
 
 </html>
