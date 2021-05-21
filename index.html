@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="/path/to/flickity.css" media="screen">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <title>Mara Portafolio</title>
 </head>
 
@@ -18,9 +19,9 @@
         <button id="modes-btn" class="icon"><i class="fas fa-bars"></i></button>
         <nav id="modes_menu" class="modes_menu modes_menu--ocultar">
             <ul> -->
-    <!-- <label for="modes"></label><br> -->
+    <!-- <label for="modes"></label><br>
 
-    <!-- <li> Inicio </li>
+                <li> Inicio </li>
                 <li> Portafolio</li>
                 <li> Contacto</li>
             </ul>
@@ -39,105 +40,87 @@
                 <!-- <p>Desarrolladora <br> <i class="text">FullStack Junior</i></p>
                 <p>Tecnologa<br> <i class="text">Analisis & Desarrollo</i></p> -->
                 <p><i class="text">Desarrolladora</i></p>
-                <p><i class="text">FullStack Junior</i></p>
-                <p><i class="text">Tecnologa en:</i></p>
-                <p><i class="text">Analisis & </i></p>
-                <p><i class="text">Desarrollo Web</i></p>
+                <p><i class="text">FullStack</i></p>
+
             </div>
 
         </div>
     </main>
     <div class="profile-content">
         <div class="profile">
+            <div class="card1" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Perfil</h5>
+
+                    <p class="card-text">Hago desarrollo Fullstack utilizando tecnologías como PHP , HTML5, CSS3, JavaScript, React y aplicación en bases de datos MySQL y cuento con conocimientos de Scrum para trabajo en equipo. Me gusta trabajar con creatividad, me entusiasma
+                        aprender nuevas tecnologías, puedo adaptarme con rapidez a los cambios, Actualmente co-lidero una familia de cuatro personas lo cual me ha brindado capacidades de resolución de problema y toma de decisiones .
+
+
+                    </p>
+
+                </div>
+            </div>
+
+
         </div>
+
+
         <!-- <img class="photo" src="" alt="logo"> -->
     </div>
-    <div class="skills ">
-        <img class="skill1" id="icon" src="img/CSS3_and_HTML5.svg" alt="icon">
-        <img class="skill" id="icon2" src="img/javascript.png" alt="icon">
-        <img class="skill2" src="img/phplogo.png" alt="icon">
-        <img class="skill" src="img/react.png" alt="icon">
+
+    <div class="project">
+        <h2>Proyectos</h2>
+
+        <ul class="list-group">
+
+            <li class="list-group-item"><a href="https://margarita1893.github.io/retosjs/" target="_blank"> Proyecto
+                    Retos en JavaScript & Html, CSS3</a> </li>
+
+            <li class="list-group-item list-group-item-primary">
+                <a href="https://modest-payne-6b229e.netlify.app/" target="_blank"></a>Menú Digital React.js</a>
+            </li>
+            <li class="list-group-item list-group-item-secondary">
+                <a href="https://margarita1893.github.io/cronoReact/" target="_blank"></a>Cronometro React.js</a>
+            </li>
+            <li class="list-group-item list-group-item-success">
+                <a href="https://joyeria.woobit.co/" target="_blank"></a>Tienda En Línea Wordpress
+                </a>
+            </li>
+
+
+
+        </ul>
 
     </div>
 
-    <!-- <div class="carusel"> -->
-
-
-    <div class="main-gallery">
-        <div class="port">
-            <h3>Desarrollos</h3>
-        </div>
-
-        <section id="slider">
-            <input type="radio" name="slider" id="s1">
-            <input type="radio" name="slider" id="s2">
-            <input type="radio" name="slider" id="s3" checked>
-            <input type="radio" name="slider" id="s4">
-            <input type="radio" name="slider" id="s5">
 
 
 
-            <label for="s1" id="slide1">
-                <img src="img/white-painted-concrete-wall-888895_1920.jpg" height="100%" width="100%">
-                <button class="boton">
-                    <a href=""></a>En espera...
-                </button>
-            </label>
 
 
-            <label for="s2" id="slide2">
-                <img src="img/project2.png" height="100%" width="100%">
-                <button class="boton">
-                    <a href="https://margarita1893.github.io/cronoReact/"></a>Ver
-                </button>
-            </label>
-            <label for="s3" id="slide3">
-                <img src="img/project3.png" height="100%" width="100%">
-                <button class="boton">
-                    <a href="https://modest-payne-6b229e.netlify.app/"></a>Ver
-                </button>
-            </label>
-            <label for="s4" id="slide4">
-                <img src="img/the-polygon-1562743.jpg" height="100%" width="100%">
-                <button class="boton">
-                    <a href=""></a>En espera...
-                </button>
+    <div>
+        <form name="contact" method="POST" data-netlify="true">
+            <h2>Contacto:</h2>
 
-            </label>
+            <div id="from">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name">
+            </div>
 
-            </label>
-            <label for="s5" id="slide5">
-                <img src="img/proyecto1.png" height="100%" width="100%">
-                <button class="boton">
-                    <a href="https://margarita1893.github.io/retosjs/"></a>Ver</a>
-                </button>
-            </label>
+            <div id="reply">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+            </div>
 
-        </section>
+            <div id="mensaje">
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje"></textarea>
+            </div>
 
-    </div>
-    <form name="contact" method="POST" data-netlify="true">
-        <h2>Contacto:</h2>
-
-        <div id="from">
-            <label for="name">Nombre:</label>
-            <input type="text" id="name" name="name">
-        </div>
-
-        <div id="reply">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email">
-        </div>
-
-        <div id="mensaje">
-            <label for="mensaje">Mensaje:</label>
-            <textarea id="mensaje" name="mensaje"></textarea>
-        </div>
-
-        <div class="btn">
-            <button type="submit" value="Enviar" id="btnSend">Enviar</button>
-        </div>
-    </form>
+            <div class="btn">
+                <button type="submit" value="Enviar" id="btnSend">Enviar</button>
+            </div>
+        </form>
     </div>
     <footer>
 
@@ -163,6 +146,7 @@
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
     <!-- <script src="js/typed.js"></script> -->
     <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 </body>
 
 </html>

@@ -8,15 +8,15 @@ body {
 
 .profile-content {
     display: flex;
-    justify-content: center;
+    margin-left: 100px;
     width: 100vw;
 }
 
 .profile {
-    text-align: center;
+    /* text-align: left; */
     background-image: url(./img/foto.jpeg);
     background-size: cover;
-    background-position: center center;
+    /* background-position: left left; */
     width: 360px;
     height: 360px;
     max-width: 360px;
@@ -24,18 +24,16 @@ body {
     border-radius: 50%;
 }
 
-
-/* .photo {
-    border-radius: 100%;
-    width: 330px;
-    height: 360px;
-    border: solid 4px rgb(2, 37, 61);
-} */
-
-
-/* img {
-   
-} */
+.card1 {
+    margin-left: 110%;
+    margin-top: 10%;
+    opacity: .5;
+    background-color: rgb(204, 20, 20);
+    height: 2em;
+    width: 150px;
+    top: 10px;
+    text-align: center;
+}
 
 .content {
     text-align: center;
@@ -194,9 +192,9 @@ textarea {
 /* SKILLS */
 
 #icon {
-    width: 200px;
-    height: 100px;
-    margin-left: 25%
+    width: 100px;
+    height: 60px;
+    margin-top: -10px;
 }
 
 #icon2 {
@@ -206,8 +204,8 @@ textarea {
 .skill {
     width: 100px;
     height: 100px;
-    margin: 30px;
-    margin-top: 10%;
+    margin-left: 10px;
+    margin-top: -10px;
 }
 
 .skills {
@@ -223,9 +221,16 @@ textarea {
 
 .skill2 {
     width: 150px;
-    height: 100px;
+    height: 200px;
     margin: 25px;
-    margin-top: 10%;
+    margin-top: -40px;
+}
+
+.skill3 {
+    width: 150px;
+    height: 200px;
+    margin-left: 65%;
+    margin-top: -130%;
 }
 
 
@@ -245,95 +250,13 @@ textarea {
     height: 46vw;
 }
 
-[type=radio] {
-    display: none;
+.list-group {
+    margin-left: 90px;
+    margin-right: 90px;
 }
 
-#slider {
-    height: 35vw;
-    position: relative;
-    perspective: 1000px;
-    transform-style: preserve-3d;
-}
-
-#slider label {
-    margin: auto;
-    width: 60%;
-    height: 100%;
-    border-radius: 4px;
-    position: absolute;
-    left: 0;
-    right: 0;
-    cursor: pointer;
-    transition: transform 0.4s ease;
-}
-
-[type=radio] {
-    display: none;
-}
-
-#slider {
-    height: 35vw;
-    position: relative;
-    perspective: 1000px;
-    transform-style: preserve-3d;
-}
-
-#slider label {
-    margin: auto;
-    width: 60%;
-    height: 100%;
-    border-radius: 4px;
-    position: absolute;
-    left: 0;
-    right: 0;
-    cursor: pointer;
-    transition: transform 0.4s ease;
-}
-
-#s1:checked~#slide4,
-#s2:checked~#slide5,
-#s3:checked~#slide1,
-#s4:checked~#slide2,
-#s5:checked~#slide3 {
-    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .37);
-    transform: translate3d(-30%, 0, -200px);
-}
-
-#s1:checked~#slide5,
-#s2:checked~#slide1,
-#s3:checked~#slide2,
-#s4:checked~#slide3,
-#s5:checked~#slide4 {
-    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, .3), 0 2px 2px 0 rgba(0, 0, 0, .2);
-    transform: translate3d(-15%, 0, -100px);
-}
-
-#s1:checked~#slide1,
-#s2:checked~#slide2,
-#s3:checked~#slide3,
-#s4:checked~#slide4,
-#s5:checked~#slide5 {
-    box-shadow: 0 13px 25px 0 rgba(0, 0, 0, .3), 0 11px 7px 0 rgba(0, 0, 0, .19);
-    transform: translate3d(0, 0, 0);
-}
-
-#s1:checked~#slide2,
-#s2:checked~#slide3,
-#s3:checked~#slide4,
-#s4:checked~#slide5,
-#s5:checked~#slide1 {
-    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, .3), 0 2px 2px 0 rgba(0, 0, 0, .2);
-    transform: translate3d(15%, 0, -100px);
-}
-
-#s1:checked~#slide3,
-#s2:checked~#slide4,
-#s3:checked~#slide5,
-#s4:checked~#slide1,
-#s5:checked~#slide2 {
-    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .37);
-    transform: translate3d(30%, 0, -200px);
+.project {
+    margin-top: 10%;
 }
 
 
@@ -380,4 +303,35 @@ ul li {
 .boton {
     margin-top: -80px;
     margin-bottom: 50%;
+}
+
+.card {
+    display: inline-block;
+    width: 150vh;
+    height: 50vh;
+    margin-left: 10%;
+    margin-right: 20%;
+    background-color: rgb(110, 107, 107);
+}
+
+.card2 {
+    width: 150vh;
+    height: 50vh;
+    margin-left: 10%;
+    margin-right: 20%;
+    background-color: rgb(172, 167, 167);
+    border-radius: 20px;
+}
+
+.card-body {
+    display: inline-block;
+    width: 100vh;
+    height: 50vh;
+    margin-left: 10%;
+    margin-right: 20%;
+    background-color: rgb(172, 167, 167);
+    border-radius: 20px;
+    font-size: 15px;
+    text-align: center;
+    color: lavenderblush;
 }
